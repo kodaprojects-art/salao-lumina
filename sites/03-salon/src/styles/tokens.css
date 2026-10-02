@@ -1,0 +1,72 @@
+/* Design tokens. Reference R6, values from shared/tokens/03-salon.css; fonts per docs/design/03-salon.md (approved Google stand-ins). */
+/* Spacing measured on the reference at 1440/1920px. Breakpoints: 810px, 1200px. */
+:root {
+  --color-navy: #001c2e;
+  --color-navy-2: #00253d;
+  --color-slate: #4d718c;
+  --color-slate-2: #446278;
+  --color-blue-light: #dbf3ff;
+  --color-blue-grey-light: #e6edf2;
+  --color-blue-lighter: #e6f2fc;
+  --color-blue: #0080ff;
+  --color-blue-dark: #003b94;
+  --color-off-white: #fafafa;
+  --color-white: #fff;
+  --shadow-color-soft: rgba(0, 7, 26, 0.04);
+  --shadow-color-strong: rgba(0, 7, 26, 0.12);
+  --shadow-card: 0 1px 2px var(--shadow-color-soft), 0 4px 12px var(--shadow-color-soft), 0 12px 32px var(--shadow-color-strong);
+
+  --color-bg: var(--color-white);
+  --color-surface: var(--color-off-white);
+  --color-text: var(--color-navy);
+  --color-muted: var(--color-slate-2);
+  --color-border: var(--color-blue-grey-light);
+  --color-primary: var(--color-blue);
+  --color-on-primary: var(--color-white);
+  --color-focus: var(--color-blue-dark);
+
+  --font-body: "Nunito", system-ui, sans-serif;
+  --font-heading: "DM Serif Display", Georgia, serif;
+  --font-hand: "Caveat", cursive;
+  --text-xs: 11px;
+  --text-sm: 13px;
+  --text-base: 16px;
+  --text-lead: 17px;
+  --text-card: 24px;
+  --text-h3: 36px;
+  --text-h2: 64px;
+  --text-h1: 92px;
+  --text-h2-mobile: 36px;
+  --text-h1-mobile: 48px;
+  --leading-body: 1.5;
+  --leading-heading: 1.05;
+  --weight-semibold: 600;
+
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 48px;
+  --space-2xl: 80px;
+  --space-section: 160px;
+  --space-section-mobile: 96px;
+  --space-gutter: 20px;
+  --container-max: 1232px;
+  --container-narrow: 720px;
+  --container-hero: 1000px;
+  --header-height: 72px;
+  --announcement-height: 28px;
+
+  --border-width: 1px;
+  --radius-button: 9999px;
+  --radius-card: 12px;
+  --radius-md: 10px;
+  --radius-input: 10px;
+  --focus-width: 2px;
+  --focus-offset: 2px;
+
+  --duration-fast: 150ms;
+  --opacity-hover: 0.85;
+  --z-header: 10;
+  --z-skip: 20;
+}

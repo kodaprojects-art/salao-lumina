@@ -1,0 +1,100 @@
+{
+  "businessName": "Salão Lumina",
+  "reference": "R6",
+  "seo": {
+    "title": "Salão Lumina | Beleza completa em um só lugar",
+    "description": "Cabelo, unhas, estética e maquiagem em um só salão. Agende online em poucos minutos."
+  },
+  "sections": [
+    {
+      "id": "announcement",
+      "text": "Novo: consulte nosso guia gratuito de cuidados",
+      "cta": { "label": "Agendar agora", "href": "/agendar" }
+    },
+    {
+      "id": "header",
+      "logoText": "Lumina",
+      "links": ["Serviços", "Preços", "Novidades", "Ajuda"],
+      "login": "Entrar",
+      "cta": { "label": "Agendar", "href": "/agendar" }
+    },
+    {
+      "id": "hero",
+      "badge": "Conheça [TODO]",
+      "heading": "Da primeira visita ao cliente fiel, com todo o cuidado",
+      "cta": { "label": "Agendar primeiro horário", "href": "/agendar" }
+    },
+    {
+      "id": "demo",
+      "label": "Explore o salão",
+      "image": { "alt": "Interior do salão de beleza", "unsplashQuery": "beauty salon interior" }
+    },
+    {
+      "id": "how-it-works",
+      "heading": "Seu horário marcado em menos de 5 minutos",
+      "steps": [
+        { "title": "Escolha o serviço", "image": { "alt": "Cliente escolhendo serviço", "unsplashQuery": "woman beauty salon" } },
+        { "title": "Marque seu horário", "image": { "alt": "Agenda do salão", "unsplashQuery": "appointment booking phone" } },
+        { "title": "Chegue e relaxe", "image": { "alt": "Cliente relaxando no salão", "unsplashQuery": "relaxing salon client" } }
+      ]
+    },
+    {
+      "id": "features",
+      "items": [
+        { "title": "Cabelo", "text": "Cortes, coloração e tratamentos.", "image": { "alt": "Coloração de cabelo", "unsplashQuery": "hair coloring salon" } },
+        { "title": "Unhas", "text": "Manicure e pedicure.", "image": { "alt": "Manicure em andamento", "unsplashQuery": "manicure nails salon" } },
+        { "title": "Estética", "text": "Limpeza de pele e cuidados faciais.", "image": { "alt": "Tratamento facial", "unsplashQuery": "facial treatment spa" } },
+        { "title": "Maquiagem", "text": "Produções para o dia a dia e eventos.", "image": { "alt": "Maquiadora trabalhando", "unsplashQuery": "makeup artist" } },
+        { "title": "Sobrancelhas", "text": "Design e cuidados.", "image": { "alt": "Design de sobrancelhas", "unsplashQuery": "eyebrow shaping" } },
+        { "title": "Depilação", "text": "Atendimento rápido e confortável.", "image": { "alt": "Sala de estética", "unsplashQuery": "spa treatment room" } }
+      ]
+    },
+    {
+      "id": "deep-1",
+      "heading": "Atendimento que lembra de você",
+      "image": { "alt": "Profissional atendendo cliente", "unsplashQuery": "hairdresser with client" }
+    },
+    {
+      "id": "deep-2",
+      "heading": "Recomendações pensadas para você",
+      "image": { "alt": "Produtos de beleza na bancada", "unsplashQuery": "beauty products salon shelf" }
+    },
+    {
+      "id": "why-switch",
+      "heading": "Mais cuidado, menos idas a lugares diferentes",
+      "items": ["[TODO]", "[TODO]", "[TODO]"]
+    },
+    {
+      "id": "audience-tabs",
+      "tabs": [
+        { "label": "Para ela", "text": "[TODO]" },
+        { "label": "Para ele", "text": "[TODO]" },
+        { "label": "Noivas", "text": "[TODO]" }
+      ]
+    },
+    {
+      "id": "overview",
+      "heading": "Toda a sua beleza em um só lugar",
+      "image": { "alt": "Ambiente completo do salão", "unsplashQuery": "modern hair salon" }
+    },
+    {
+      "id": "faq",
+      "heading": "Pergunte à vontade",
+      "items": [
+        { "q": "Quanto custam os serviços?", "a": "[TODO]" },
+        { "q": "Posso remarcar meu horário?", "a": "[TODO]" },
+        { "q": "Quais formas de pagamento aceitam?", "a": "[TODO]" },
+        { "q": "Qual o horário de funcionamento?", "a": "[TODO]" }
+      ]
+    },
+    {
+      "id": "final-cta",
+      "heading": "Reserve seu momento de cuidado",
+      "cta": { "label": "Agendar agora", "href": "/agendar" }
+    },
+    {
+      "id": "footer",
+      "links": ["Para quem é", "Novidades", "Guia gratuito", "Instagram", "Privacidade", "Termos"]
+    }
+  ]
+}

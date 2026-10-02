@@ -1,0 +1,28 @@
+/* Design tokens. Reference RP, source docs/specs/RP.md:28-31. */
+/* Breakpoints: >=1900px, >=1440px, >=810px, <=809px */
+@custom-media --bp-mobile (max-width: 809px);
+@custom-media --bp-1 (min-width: 810px);
+@custom-media --bp-2 (min-width: 1440px);
+@custom-media --bp-3 (min-width: 1900px);
+
+:root {
+  /* Koda palette replaces RP colors (docs/changes/14-portfolio.md). [TODO] provisional. */
+  --color-primary: #1E1E1E;
+  --color-secondary: #0B4FFF;
+  --color-white: #fff;
+  --font-display: "BDO Grotesk Variable", system-ui, sans-serif;
+  --font-body: "Mona Sans", system-ui, sans-serif;
+  --font-alt: "Manrope", system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", system-ui, sans-serif;
+  --font-ui: "Inter", system-ui, sans-serif;
+  --text-1: 10px;
+  --text-2: 11px;
+  --text-3: 14px;
+  --text-4: 16px;
+  --text-5: 18px;
+  --text-6: 20px;
+  --text-7: 24px;
+  --radius-sm: 8px;
+  --radius-pill: 999px;
+  /* [TODO] spacing scale not in spec; measure from reference before build. */
+}

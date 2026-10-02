@@ -1,0 +1,38 @@
+/* Design tokens. Reference R3, source docs/specs/R3.md:32-35. */
+/* Breakpoints: >=1200px, >=810px, <=809px */
+@custom-media --bp-mobile (max-width: 809px);
+@custom-media --bp-1 (min-width: 810px);
+@custom-media --bp-2 (min-width: 1200px);
+
+:root {
+  --color-black: #000;
+  --color-white: #fff;
+  --color-grey-light: #f1f1f1;
+  --color-silver: #d6dbdc;
+  --color-grey: #828487;
+  --color-grey-dark: #6b6d70;
+  --color-charcoal: #333439;
+  --color-sand: #f1dfc2;
+  --color-gold: #c9a227;
+  --color-extra-green: #45aa3e;
+  --color-extra-yellow: #ffd900;
+  --font-heading: "Cormorant Garamond", system-ui, sans-serif;
+  --font-body: "Inter", system-ui, sans-serif;
+  --text-1: 14px;
+  --text-2: 16px;
+  --text-3: 18px;
+  --text-4: 20px;
+  --text-5: 22px;
+  --text-6: 24px;
+  --text-7: 26px;
+  --text-8: 30px;
+  --text-9: 32px;
+  --text-10: 40px;
+  --text-11: 42px;
+  --text-12: 60px;
+  --text-13: 72px;
+  --text-14: 100px;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  /* [TODO] spacing scale not in spec; measure from reference before build. */
+}

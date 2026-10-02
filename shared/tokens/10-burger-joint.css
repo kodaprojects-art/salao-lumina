@@ -1,0 +1,35 @@
+/* Design tokens. Reference R9, source docs/specs/R9.md:18,30-33. */
+/* Breakpoints: >=1440px, >=1200px, >=810px, <=809px */
+@custom-media --bp-mobile (max-width: 809px);
+@custom-media --bp-1 (min-width: 810px);
+@custom-media --bp-2 (min-width: 1200px);
+@custom-media --bp-3 (min-width: 1440px);
+
+:root {
+  --color-ink: #111315;
+  --color-off-white: #eef1f0;
+  --color-off-white-2: #edf0ef;
+  --color-tan: #b89976;
+  --color-grey: #6e6e6e;
+  --color-grey-light: #ccc;
+  --color-black: #000;
+  --color-white: #fff;
+  --font-display: "Franklin Gothic Condensed", system-ui, sans-serif;  /* [TODO] proprietary, see docs/design */
+  --font-body: "Poppins", system-ui, sans-serif;
+  --font-hand: "GoodDog Plain", system-ui, sans-serif;  /* [TODO] proprietary, see docs/design */
+  --font-mono: "Apercu Mono Pro", system-ui, sans-serif;  /* [TODO] proprietary, see docs/design */
+  --text-1: 12px;
+  --text-2: 14px;
+  --text-3: 16px;
+  --text-4: 17.46px;
+  --text-5: 18px;
+  --text-6: 20px;
+  --text-7: 24px;
+  --text-8: 32px;
+  --text-9: 35px;
+  --text-10: 48px;
+  --text-11: 60px;
+  --radius-md: 24px;
+  --radius-lg: 50px;
+  /* [TODO] spacing scale not in spec; measure from reference before build. */
+}

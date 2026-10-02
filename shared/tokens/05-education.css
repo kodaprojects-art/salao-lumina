@@ -1,0 +1,43 @@
+/* Design tokens. Reference R7, source docs/specs/R7.md:19,31-34. */
+/* Breakpoints: >=1200px, >=810px, <=809px */
+@custom-media --bp-mobile (max-width: 809px);
+@custom-media --bp-1 (min-width: 810px);
+@custom-media --bp-2 (min-width: 1200px);
+
+:root {
+  --color-bg: #0a0a0a;
+  --color-bg-2: #0d0d0d;
+  --color-surface: #1d1d1f;
+  --color-surface-2: #262626;
+  --color-grey: #999;
+  --color-grey-light: #a9abad;
+  --color-white: #fff;
+  --color-off-white: #fbfafc;
+  --color-accent: #ff791b;
+  --color-accent-light: #ff9245;
+  --color-accent-red: #f65736;
+  --color-blue: #185df1;
+  --color-blue-light: #61b0f9;
+  --color-green: #17c964;
+  --font-body: "Geist", system-ui, sans-serif;
+  --font-mono: "Geist Mono", system-ui, sans-serif;
+  --font-alt: "Inter", system-ui, sans-serif;
+  --font-hand: "Gochi Hand", system-ui, sans-serif;
+  --text-1: 12px;
+  --text-2: 13px;
+  --text-3: 14px;
+  --text-4: 16px;
+  --text-5: 18px;
+  --text-6: 20px;
+  --text-7: 21px;
+  --text-8: 22px;
+  --text-9: 28px;
+  --text-10: 36px;
+  --text-11: 42px;
+  --text-12: 48px;
+  --text-13: 56px;
+  --text-14: 60px;
+  --text-15: 70px;
+  --radius-pill: 99px;
+  /* [TODO] spacing scale not in spec; measure from reference before build. */
+}

@@ -1,0 +1,46 @@
+/* Design tokens. Reference R8, source docs/specs/R8.md:20,32-35. */
+/* Breakpoints: >=1200px, >=810px, <=809px */
+@custom-media --bp-mobile (max-width: 809px);
+@custom-media --bp-1 (min-width: 810px);
+@custom-media --bp-2 (min-width: 1200px);
+
+:root {
+  --color-slate: #2a3337;
+  --color-slate-dark: #182126;
+  --color-slate-mid: #394f5a;
+  --color-grey: #4f565a;
+  --color-grey-light: #62686b;
+  --color-cool-50: #f4f6fa;
+  --color-cool-100: #e6ebf3;
+  --color-cool-200: #d3dae5;
+  --color-cool-300: #bac5d6;
+  --color-accent: #f26651;
+  --color-accent-light: #f98270;
+  --color-accent-lighter: #fdb0a4;
+  --color-peach: #f9ad78;
+  --color-peach-light: #fbcfad;
+  --color-aqua: #bbe2e6;
+  --color-aqua-light: #dbf0f2;
+  --color-lilac: #dbd4de;
+  --color-white: #fff;
+  --color-black: #000;
+  --font-body: "Aeonik", system-ui, sans-serif;  /* [TODO] proprietary, see docs/design */
+  --font-alt: "Cabin", system-ui, sans-serif;
+  --font-ui: "Inter", system-ui, sans-serif;
+  --text-1: 14px;
+  --text-2: 16px;
+  --text-3: 17px;
+  --text-4: 18px;
+  --text-5: 20px;
+  --text-6: 22px;
+  --text-7: 24px;
+  --text-8: 26px;
+  --text-9: 28px;
+  --text-10: 32px;
+  --text-11: 40px;
+  --text-12: 52px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-pill: 1000px;
+  /* [TODO] spacing scale not in spec; measure from reference before build. */
+}

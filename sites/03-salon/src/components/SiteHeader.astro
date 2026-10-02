@@ -1,0 +1,154 @@
+---
+import { navAnchors, type Link } from '../lib/content';
+
+interface Props {
+  logo: string;
+  links: string[];
+  login: string;
+  cta: Link;
+}
+
+const { logo, links, login, cta } = Astro.props;
+---
+
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a class="site-header__logo" href="/">{logo}</a>
+    <button class="site-header__toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+      <span class="visually-hidden">Abrir menu</span>
+      <svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h16"></path></svg>
+    </button>
+    <nav id="site-nav" class="site-header__nav" aria-label="Principal">
+      <ul class="site-header__links">
+        {links.map((label, i) => <li><a href={navAnchors[i] ?? '#'}>{label}</a></li>)}
+      </ul>
+      <div class="site-header__actions">
+        <a class="site-header__login" href={cta.href}>{login}</a>
+        <a class="site-header__cta" href={cta.href}>{cta.label}</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<script>
+  const toggle = document.querySelector<HTMLButtonElement>('.site-header__toggle');
+  const nav = document.getElementById('site-nav');
+  if (toggle && nav) {
+    const setOpen = (open: boolean) => {
+      toggle.setAttribute('aria-expanded', String(open));
+      nav.dataset.open = String(open);
+    };
+    toggle.addEventListener('click', () => setOpen(toggle.getAttribute('aria-expanded') !== 'true'));
+    nav.addEventListener('click', (e) => {
+      if ((e.target as HTMLElement).closest('a')) setOpen(false);
+    });
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && toggle.getAttribute('aria-expanded') === 'true') {
+        setOpen(false);
+        toggle.focus();
+      }
+    });
+  }
+</script>
+
+<style>
+  .site-header {
+    position: sticky;
+    inset-block-start: 0;
+    z-index: var(--z-header);
+    background: color-mix(in srgb, var(--color-bg) 90%, transparent);
+    backdrop-filter: blur(8px);
+  }
+
+  .site-header__inner {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-block-size: var(--header-height);
+  }
+
+  .site-header__logo {
+    font-family: var(--font-heading);
+    font-size: var(--text-card);
+    text-decoration: none;
+  }
+
+  .site-header__toggle {
+    display: inline-flex;
+    padding: var(--space-sm);
+    background: none;
+    border: 0;
+    cursor: pointer;
+  }
+
+  .site-header__nav {
+    display: none;
+    position: absolute;
+    inset-inline: 0;
+    inset-block-start: 100%;
+    padding: var(--space-lg) var(--space-gutter);
+    background: var(--color-bg);
+    box-shadow: var(--shadow-card);
+  }
+
+  .site-header__nav[data-open='true'] {
+    display: grid;
+    gap: var(--space-lg);
+  }
+
+  .site-header__links {
+    display: grid;
+    gap: var(--space-md);
+    padding: 0;
+    list-style: none;
+  }
+
+  .site-header__links a,
+  .site-header__login {
+    font-size: var(--text-sm);
+    font-weight: var(--weight-semibold);
+    text-decoration: none;
+  }
+
+  .site-header__links a:hover,
+  .site-header__login:hover {
+    color: var(--color-slate);
+  }
+
+  .site-header__actions {
+    display: flex;
+    align-items: center;
+    gap: var(--space-lg);
+  }
+
+  .site-header__cta {
+    padding: var(--space-sm) var(--space-md);
+    border-radius: var(--radius-button);
+    background: var(--color-navy);
+    color: var(--color-white);
+    font-size: var(--text-sm);
+    font-weight: var(--weight-semibold);
+    text-decoration: none;
+  }
+
+  .site-header__cta:hover {
+    opacity: var(--opacity-hover);
+  }
+
+  @media (min-width: 810px) {
+    .site-header__toggle {
+      display: none;
+    }
+
+    .site-header__nav,
+    .site-header__nav[data-open='true'] {
+      display: contents;
+    }
+
+    .site-header__links {
+      display: flex;
+      gap: var(--space-xl);
+    }
+  }
+</style>

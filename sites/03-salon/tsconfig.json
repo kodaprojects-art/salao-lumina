@@ -1,0 +1,11 @@
+{
+  "extends": "astro/tsconfigs/strict",
+  "include": [".astro/types.d.ts", "**/*", "../../shared/**/*"],
+  "exclude": ["dist"],
+  "compilerOptions": {
+    "paths": {
+      "astro": ["./node_modules/astro/dist/index.d.ts"],
+      "astro/*": ["./node_modules/astro/*"]
+    }
+  }
+}

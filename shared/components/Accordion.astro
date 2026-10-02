@@ -1,0 +1,41 @@
+---
+export interface AccordionItem {
+  question: string;
+  answer: string;
+}
+
+interface Props {
+  items: AccordionItem[];
+}
+
+const { items } = Astro.props;
+---
+
+<div class="accordion">
+  {items.map((item) => (
+    <details class="accordion__item">
+      <summary class="accordion__question">{item.question}</summary>
+      <p class="accordion__answer">{item.answer}</p>
+    </details>
+  ))}
+</div>
+
+<style>
+  .accordion {
+    display: grid;
+    gap: var(--space-sm);
+  }
+
+  .accordion__item {
+    border-block-end: var(--border-width) solid var(--color-border);
+  }
+
+  .accordion__question {
+    padding-block: var(--space-md);
+    cursor: pointer;
+  }
+
+  .accordion__answer {
+    padding-block-end: var(--space-md);
+  }
+</style>

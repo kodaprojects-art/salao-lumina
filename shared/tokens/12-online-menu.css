@@ -1,0 +1,35 @@
+/* Design tokens. Reference R2, source docs/specs/R2.md:27-30. */
+/* Breakpoints: >=1440px, >=1200px, >=810px, <=809px */
+@custom-media --bp-mobile (max-width: 809px);
+@custom-media --bp-1 (min-width: 810px);
+@custom-media --bp-2 (min-width: 1200px);
+@custom-media --bp-3 (min-width: 1440px);
+
+:root {
+  --color-black: #000;
+  --color-white: #fff;
+  --color-grey-900: #222;
+  --color-grey-850: #212121;
+  --color-grey-800: #282828;
+  --color-grey-500: #6d6d6d;
+  --color-grey-400: #a7a7a7;
+  --color-grey-300: #d2d2d2;
+  --color-grey-100: #e8e8e8;
+  --color-accent: #ff7100;
+  --font-display: "Plaga Bold Regular", system-ui, sans-serif;  /* [TODO] proprietary, see docs/design */
+  --font-body: "Myfont Regular", system-ui, sans-serif;  /* [TODO] proprietary, see docs/design */
+  --font-serif: "MingLiU", system-ui, sans-serif;  /* [TODO] proprietary, see docs/design */
+  --font-fallback: "Inter", system-ui, sans-serif;
+  --text-1: 10px;
+  --text-2: 12px;
+  --text-3: 14px;
+  --text-4: 15px;
+  --text-5: 16px;
+  --text-6: 22px;
+  --text-7: 24px;
+  --text-8: 26px;
+  --text-9: 40px;
+  --radius-sm: 10px;
+  --radius-md: 20px;
+  /* [TODO] spacing scale not in spec; measure from reference before build. */
+}

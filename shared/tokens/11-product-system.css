@@ -1,0 +1,55 @@
+/* Design tokens. Reference R6, source docs/specs/R6.md:22,34-37. */
+/* Breakpoints: >=1440px, >=1200px, >=810px, <=809px */
+@custom-media --bp-mobile (max-width: 809px);
+@custom-media --bp-1 (min-width: 810px);
+@custom-media --bp-2 (min-width: 1200px);
+@custom-media --bp-3 (min-width: 1440px);
+
+:root {
+  --color-navy: #001c2e;
+  --color-navy-2: #00253d;
+  --color-slate: #4d718c;
+  --color-slate-2: #446278;
+  --color-slate-3: #4c6476;
+  --color-blue-light: #dbf3ff;
+  --color-blue-grey-light: #e6edf2;
+  --color-blue-lighter: #e6f2fc;
+  --color-blue: #0080ff;
+  --color-blue-alt: #0080fc;
+  --color-blue-dark: #003b94;
+  --color-blue-electric: #1400ff;
+  --color-ink: #121212;
+  --color-grey: #757575;
+  --color-grey-light: #ededed;
+  --color-off-white: #fafafa;
+  --color-white: #fff;
+  --color-danger: #ff4040;
+  --color-success: #009447;
+  --color-success-bg: #d7ffc9;
+  --color-danger-bg: #ffe9e9;
+  --color-orange: #f70;
+  --shadow-color-soft: rgba(0, 7, 26, 0.04);
+  --shadow-color-strong: rgba(0, 7, 26, 0.12);
+  --font-body: "Open Runde", system-ui, sans-serif;  /* [TODO] proprietary, see docs/design */
+  --font-display: "Lastik", system-ui, sans-serif;  /* [TODO] proprietary, see docs/design */
+  --font-alt: "Geist", system-ui, sans-serif;
+  --font-hand: "Gveret Levin", system-ui, sans-serif;  /* [TODO] proprietary, see docs/design */
+  --text-1: 10px;
+  --text-2: 11px;
+  --text-3: 12px;
+  --text-4: 13px;
+  --text-5: 14px;
+  --text-6: 15px;
+  --text-7: 16px;
+  --text-8: 17px;
+  --text-9: 18px;
+  --text-10: 28px;
+  --text-11: 36px;
+  --text-12: 56px;
+  --text-13: 64px;
+  --text-14: 92px;
+  --radius-md: 10px;
+  --radius-lg: 12px;
+  --radius-pill: 9999px;
+  /* [TODO] spacing scale not in spec; measure from reference before build. */
+}

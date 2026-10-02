@@ -1,0 +1,31 @@
+---
+import { Image } from 'astro:assets';
+import type { ImageMetadata } from 'astro';
+
+interface Props {
+  /** Local import (preferred) or remote URL (needs width/height and an allowed domain). */
+  src: ImageMetadata | string;
+  alt: string;
+  width?: number;
+  height?: number;
+  /** Set for above-the-fold images (hero) to load eagerly. */
+  priority?: boolean;
+  sizes?: string;
+  class?: string;
+}
+
+const { src, alt, width, height, priority = false, sizes, class: className } = Astro.props;
+const attrs = {
+  sizes,
+  class: className,
+  loading: priority ? 'eager' : 'lazy',
+  fetchpriority: priority ? 'high' : 'auto',
+  decoding: 'async',
+} as const;
+---
+
+{typeof src === 'string' ? (
+  <Image src={src} alt={alt} width={width ?? 0} height={height ?? 0} {...attrs} />
+) : (
+  <Image src={src} alt={alt} width={width} height={height} {...attrs} />
+)}

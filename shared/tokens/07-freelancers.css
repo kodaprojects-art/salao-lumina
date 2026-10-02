@@ -1,0 +1,47 @@
+/* Design tokens. Reference R4, source docs/specs/R4.md:31-34. */
+/* Breakpoints: >=1440px, >=1280px, >=810px, <=809px */
+@custom-media --bp-mobile (max-width: 809px);
+@custom-media --bp-1 (min-width: 810px);
+@custom-media --bp-2 (min-width: 1280px);
+@custom-media --bp-3 (min-width: 1440px);
+
+:root {
+  --color-neutral-950: #050505;
+  --color-neutral-925: #0f0f0f;
+  --color-neutral-900: #111;
+  --color-neutral-850: #1a1a1a;
+  --color-neutral-800: #2e2e2e;
+  --color-neutral-700: #424242;
+  --color-neutral-600: #636363;
+  --color-neutral-500: #878787;
+  --color-neutral-400: #bdbdbd;
+  --color-neutral-300: #e3e3e3;
+  --color-neutral-200: #ededed;
+  --color-neutral-100: #f7f7f7;
+  --color-neutral-50: #fafafa;
+  --color-white: #fff;
+  --color-accent-light: #7ae0f6;
+  --color-accent: #0c8ea9;
+  --color-accent-dark: #1c6d7d;
+  --color-success: #00c22a;
+  --color-warning: #ffae00;
+  --color-danger: #f06837;
+  --font-body: "LT Superior", system-ui, sans-serif;  /* [TODO] proprietary, see docs/design */
+  --font-alt: "Manrope", system-ui, sans-serif;
+  --font-ui: "PP Neue Montreal", system-ui, sans-serif;  /* [TODO] proprietary, see docs/design */
+  --font-display: "PP Pangaia", system-ui, sans-serif;  /* [TODO] proprietary, see docs/design */
+  --font-mono: "B612 Mono", system-ui, sans-serif;
+  --text-1: 12px;
+  --text-2: 15px;
+  --text-3: 16px;
+  --text-4: 18px;
+  --text-5: 20px;
+  --text-6: 25px;
+  --text-7: 2.38rem;
+  --text-8: 2.4rem;
+  --text-9: 3rem;
+  --text-10: 3.75rem;
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  /* [TODO] spacing scale not in spec; measure from reference before build. */
+}
