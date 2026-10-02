@@ -20,7 +20,7 @@
     },
     {
       "id": "hero",
-      "badge": "Conheça [TODO]",
+      "badge": "Conheça o novo espaço",
       "heading": "Da primeira visita ao cliente fiel, com todo o cuidado",
       "cta": { "label": "Agendar primeiro horário", "href": "/agendar" }
     },
@@ -33,9 +33,9 @@
       "id": "how-it-works",
       "heading": "Seu horário marcado em menos de 5 minutos",
       "steps": [
-        { "title": "Escolha o serviço", "image": { "alt": "Cliente escolhendo serviço", "unsplashQuery": "woman beauty salon" } },
-        { "title": "Marque seu horário", "image": { "alt": "Agenda do salão", "unsplashQuery": "appointment booking phone" } },
-        { "title": "Chegue e relaxe", "image": { "alt": "Cliente relaxando no salão", "unsplashQuery": "relaxing salon client" } }
+        { "title": "Escolha o serviço", "text": "Veja a lista de serviços e escolha o que combina com você.", "image": { "alt": "Cliente escolhendo serviço", "unsplashQuery": "woman beauty salon" } },
+        { "title": "Marque seu horário", "text": "Selecione o dia, o horário e a profissional de sua preferência.", "image": { "alt": "Agenda do salão", "unsplashQuery": "appointment booking phone" } },
+        { "title": "Chegue e relaxe", "text": "Nossa equipe cuida de tudo enquanto você aproveita o momento.", "image": { "alt": "Cliente relaxando no salão", "unsplashQuery": "relaxing salon client" } }
       ]
     },
     {
@@ -62,14 +62,14 @@
     {
       "id": "why-switch",
       "heading": "Mais cuidado, menos idas a lugares diferentes",
-      "items": ["[TODO]", "[TODO]", "[TODO]"]
+      "items": ["Cabelo, unhas e estética no mesmo endereço", "Profissionais que acompanham seu histórico", "Agendamento online a qualquer hora"]
     },
     {
       "id": "audience-tabs",
       "tabs": [
-        { "label": "Para ela", "text": "[TODO]" },
-        { "label": "Para ele", "text": "[TODO]" },
-        { "label": "Noivas", "text": "[TODO]" }
+        { "label": "Para ela", "text": "Cortes, coloração, manicure e cuidados faciais em uma só visita." },
+        { "label": "Para ele", "text": "Corte, barba e cuidados com a pele em um horário rápido." },
+        { "label": "Noivas", "text": "Teste de penteado e maquiagem, e equipe no grande dia." }
       ]
     },
     {
@@ -81,10 +81,10 @@
       "id": "faq",
       "heading": "Pergunte à vontade",
       "items": [
-        { "q": "Quanto custam os serviços?", "a": "[TODO]" },
-        { "q": "Posso remarcar meu horário?", "a": "[TODO]" },
-        { "q": "Quais formas de pagamento aceitam?", "a": "[TODO]" },
-        { "q": "Qual o horário de funcionamento?", "a": "[TODO]" }
+        { "q": "Quanto custam os serviços?", "a": "Os cortes começam em R$ 80 e a manicure em R$ 45. Consulte a tabela completa no salão." },
+        { "q": "Posso remarcar meu horário?", "a": "Sim. Remarque sem custo com até 24 horas de antecedência." },
+        { "q": "Quais formas de pagamento aceitam?", "a": "Pix, cartões de débito e crédito em até 3x sem juros." },
+        { "q": "Qual o horário de funcionamento?", "a": "De terça a sábado, das 9h às 20h." }
       ]
     },
     {

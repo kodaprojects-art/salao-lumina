@@ -21,7 +21,7 @@ export const image = (query: string): ImageMetadata => {
   return found.default;
 };
 
-/** Single-page site: hrefs to unbuilt pages or [TODO] fall back to the final CTA section. */
+/** Single-page site: hrefs to unbuilt pages fall back to the final CTA section. */
 export const link = (l: Link): Link => ({
   label: l.label,
   href: l.href.startsWith('#') ? l.href : '#cta',
@@ -29,5 +29,5 @@ export const link = (l: Link): Link => ({
 
 /** Header nav labels (reference order) mapped to on-page anchors. */
 export const navAnchors = ['#servicos', '#faq', '#novidades', '#faq'];
-/** Footer labels (reference order) mapped to on-page anchors; external/legal pages are [TODO]. */
+/** Footer labels (reference order) mapped to on-page anchors; external/legal pages use "#". */
 export const footerAnchors = ['#audience', '#novidades', '#cta', '#', '#', '#'];
